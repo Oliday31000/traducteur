@@ -156,7 +156,9 @@ OPERATIONAL RULES:
       mediaStreamRef.current = stream;
 
       // 4. Initialize Gemini Client
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      const apiKey =
+  (window as any).process?.env?.API_KEY || '';
+const ai = new GoogleGenAI({ apiKey });
       
       // Determine base voice configuration.
       // If both are Girl, use Kore. If both are Boy, use Puck. If mixed, default to Kore (Girl) and rely on system instruction for tone shift.
