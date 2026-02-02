@@ -14,9 +14,8 @@ import { TranscriptBubble } from './components/TranscriptBubble';
 
 // Fix: Use the recommended full model name for native audio conversation tasks
 const MODEL_NAME = 'models/gemini-pro';
-
 const LANGUAGES = [
-  E'nglish',
+ 'English','
   'French',
   'Spanish',
   'German',
@@ -26,9 +25,8 @@ const LANGUAGES = [
   'Chinese',
   'Japanese',
   'Korean',
-  'Hindi'
+   'Hindi'
 ];
-
 type VoiceOption = 'Girl' | 'Boy';
 
 function App() {
