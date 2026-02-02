@@ -13,10 +13,10 @@ import AudioVisualizer from './components/AudioVisualizer';
 import { TranscriptBubble } from './components/TranscriptBubble';
 
 // Fix: Use the recommended full model name for native audio conversation tasks
-const MODEL_NAME = 'gemini-2.5-flash-native-audio-preview-12-2025';
+coonst MODEL_NAME = 'models/gemini-pro';
 
 const LANGUAGES = [
-  'English',
+  English',
   'French',
   'Spanish',
   'German',
